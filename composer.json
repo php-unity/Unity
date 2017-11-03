@@ -1,0 +1,60 @@
+{
+  "name": "unity/unity",
+  "description": "Unity framework",
+  "type": "library",
+  "keywords": [ "unity-framework", "unity", "php"],
+  "homepage": "https://github.com/unity-framework/Unity",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eleandro Duzentos",
+      "email": "eleandro@inbox.ru",
+      "homepage": "https://github.com/e200",
+      "role": "developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable" : true,
+  "require": {
+    "unity/framework": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "../container"
+    },{
+      "type": "vcs",
+      "url": "../config"
+    },
+    {
+      "type": "vcs",
+      "url": "../reflector"
+    },
+    {
+      "type": "vcs",
+      "url": "../contracts"
+    },
+    {
+      "type": "vcs",
+      "url": "../support"
+    },
+    {
+      "type": "vcs",
+      "url": "../notator"
+    },
+    {
+      "type": "vcs",
+      "url": "../framework"
+    },
+    {
+      "type": "vcs",
+      "url": "../make_accessible"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Unity\\App": "app",
+      "Unity\\Migrations": "migrations"
+    }
+  }
+}
