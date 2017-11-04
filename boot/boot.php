@@ -1,5 +1,14 @@
 <?php
 
-use Unity\Framework\App;
+use Unity\Framework\AppManager;
 
-$app = new App();
+require '../vendor/autoload.php';
+
+$app = AppManager::make();
+
+$providers = require '../sys/providers.php';
+$app->setServiceProviders($providers);
+
+$config = $app->get('configManager')->build();
+
+echo $config->get('database.type');

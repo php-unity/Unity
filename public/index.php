@@ -1,3 +1,3 @@
 <?php
 
-require '../boot.php';
+require '../boot/boot.php';

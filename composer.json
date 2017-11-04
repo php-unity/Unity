@@ -53,8 +53,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "Unity\\App": "app",
-      "Unity\\Migrations": "migrations"
+      "Unity\\App\\": "app",
+      "Unity\\Framework\\Providers\\": "sys/service_providers"
     }
   }
 }
